@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+#include <math.h> /* nokta ile biten bir cumleyi karakter arrayine okutalim
+ sonra cumlede kac tane A ve E karakteri oldugunu hesaplayalim*/
+void countcharacters(char x[]);
+int main() {
+char x[100];
+int i=0;
+    printf("enter a sentence");
+    do{
+        scanf("%c",&x[i]);
+        i++;
+    }
+    while(x[i-1]!='.');
+    countcharacters(x);
+    return 0;
+}
+void countcharacters(char x[]){
+    int i,acount=0,ecount=0;
+    for(i=0;x[i]!='.';i++){
+        if(x[i]=='A' || x[i]=='a')
+            acount++;
+        if(x[i]=='e' || x[i]=='E')
+            ecount++;
+    }
+    printf("A/a:%d \n",acount);
+    printf("e/E:%d \n",ecount);
+}
