@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdbool.h>
+int karealan(int a){
+    return a*a;
+}
+int karecevre(int a){
+    return 4*a;
+}
+int main(){
+    int kenar;
+    printf("karenin kenar uzunkugunu yaz");
+    scanf("%d",&kenar);
+    printf("alan %d",karealan(kenar));
+    printf("cevre %d",karecevre(kenar));
+}
