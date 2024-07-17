@@ -1,6 +1,19 @@
-#include <stdio.h> //ucgenin cesidini bulan program
-int main(){
+#include <stdio.h>
+#include <stdlib.h>
 
-    return 0;
+
+int main() {
+    int numbers[7],i;
+    printf("enter array numbers");
+    for(i=0;i<7;i++){
+        scanf("%d",&numbers[i]);
+    }
+    printf("\n original order");
+    for(i=0;i<7;i++){
+        printf("%d",numbers[i]);}
+    printf("\nreverse order");
+    for(i=6;i>=0;i--){
+        printf("%d",numbers[i]);
+    }
+        return 0;
 }
-
