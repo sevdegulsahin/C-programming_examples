@@ -1,0 +1,21 @@
+#include <stdio.h>
+void myarray(int*);
+int main() {
+    int numbers[6]={1,7,19,23,5,11};
+    printf("previous state:\n");
+    printf("---------------\n");
+    for (int i = 0; i < 6; ++i) {
+        printf("numbers[%d]:%d\n",i,numbers[i]);
+    }
+    myarray(numbers);
+    printf("\n next state:\n");
+    printf("---------------\n");
+    for (int i = 0; i < 6; ++i) {
+        printf("numbers[%d]:%d\n",i,numbers[i]);
+    }
+    return 0;
+}
+void myarray(int* numbers){
+    for (int j = 0; j < 6; ++j) {
+        *(numbers+j)*=3;
+    }}
